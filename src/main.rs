@@ -1,12 +1,7 @@
-mod lib;
+use character::new::Class;
 
-use lib::character::Class;
+mod character;
 
 fn main() {
-    // let char_1 = create_new_character(String::from("Łukasz"), Class::Mage);
-    let char_1 = lib::character::Character::create_new_character(String::from("Łukasz"), Class::Mage);
-    let char_2 = lib::character::Character::create_new_character(String::from("Łukasz"), Class::Palladin);
-
-    char_1.describe();
-    char_2.describe();
+    let char_1 = character::new::Character::create_new_character(String::from("Łukasz"), Class::Mage);
 }
