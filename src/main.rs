@@ -9,7 +9,7 @@ fn main() {
     println!("Welcome in my game!!!");
     loop {
         println!("Let's dive into fantasy game, do you want to join me?");
-        println!("If yes pres '1', or '0' if you wan to leave the game");
+        println!("If yes press '1', or '0' if you want to leave the game");
 
         let mut choice= String::new();
 
@@ -25,7 +25,7 @@ fn main() {
          match choice {
             1 => { 
                 println!("let's start new game!!");
-                let char_1 = character::new::Character::create_new_character(String::from("Łukasz"), Class::Mage);
+                let char_1 = character::new::Character::create_new_character(String::from("John"), Class::Mage);
                 char_1.describe();
                 break
             },
